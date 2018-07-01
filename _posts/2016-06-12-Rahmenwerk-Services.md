@@ -30,7 +30,7 @@ verfügbar.
 
 Die Beschreibungsdatei liegt üblicherweise in einem Unterverzeichnis "OSGI-INF" des Plugin-Projekts.
 
-![Projektstruktur mit Komponente]({{ site.url }}/assets/komponente_verzeichnis.png) 
+![Projektstruktur mit Komponente]({{"/assets/komponente_verzeichnis.png" | absolute_url}}) 
 
 Die Beschreibungsdatei kann händisch oder über den Assistenten der Eclipse IDE angelegt werden:
 
