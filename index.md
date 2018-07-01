@@ -5,6 +5,6 @@
 layout: home
 ---
 
-Nähere Informationen zu NERZ-Software findet sich unter http://nerv-ev.de
+Nähere Informationen zu NERZ-Software finden sich unter  [http://nerv-ev.de]{http://nerv-ev.de}
 
 
