@@ -1,0 +1,80 @@
+---
+layout: post
+title:  "Rahmenwerk - Standard-Informationen"
+date:   2014-05-16 19:17:27 +0200
+categories: rahmenwerk
+---
+
+	 
+## Hintergrund
+
+Das Rahmenwerk bietet Funktionen, um statische Standardinformationen zu präsentieren.
+Diese werden beispielsweise im Titel des Workbenchfensters eingeblendet und können 
+über entsprechende Controls in der Statuszeile des Hauptfensters eingeblendet werden.
+
+Die Ausgabe der Informationen erfolgt über einen Formatstring, in dem die gewünschten
+statischen Informationen per Platzhalter eingebaut sind. Die Platzhalter werden durch
+vordefinierte Kürzel, die in geschweifte Klammern eingebettet sind, gebildet.
+
+Folgende Platzhalter stehen zur Verfügung:
+
+- **{user}** für den Namen des angemeldeten Benutzers
+- **{userpid}** für die PID des angemeldeten Benutzers
+- **{userclass}** die Nutzerklasse des angemeldeten Benutzers
+- **{host}**  für den Hostnamen aus der Datenverteileranmeldung
+- **{port}**  für den Port aus der Datenverteileranmeldung
+- **{simvar}** für die eingestellte Standardsimulationsvariante
+- **{aoe}** für den Namen der verwendeten AOE
+- **{aoepid}** für die PID der verwendeten AOE
+- **{version}** für die Versionsnummer der Rahmenwerksoftware
+
+## Informationen im Titel des Hauptfensters der Rahmenwerkanwendung
+
+Die im Titel des Rahmenwerk-Hauptfensters angezeigten Informationen werden als
+lokale Einstellungen abgelegt.
+
+![Grundeinstellungen des Rahmenwerks]({{site.baseurl}}/assets/rw_grundeinstellungen.png) 
+
+Einstellbar sind ein Titelformat für den Offline-Betrieb und ein Titel 
+für den Online-Betrieb. Die Standwerte sind im Bild oben dargestellt.
+
+## Informationen in der Statusleiste des Hauptfensters
+
+Für die Anzeige der statischen Informationen in der Statusleiste wird ein Control
+bereitgestellt, das über den Menüeditor in die Statusleiste eingebaut werden kann.
+
+![Menüeditor - Informationen Statusleiste]({{site.baseurl}}/assets/info_statusleiste.png) 
+
+Das Bild zeigt das entsprechende Element im Menüeditor des Rahmenwerks. 
+
+Das auszugebende Format wird über die Parameter "Format im Offlinebetrieb" 
+und "Format im Onlinebetrieb" definiert.
+
+## Programmierschnittstelle   
+
+Die allgemeinen statischen Informationen können auch in eigenen Anwendungen eingesetzt
+werden.
+
+Das Enum *RwInfoDef* bietet eine statische Funktion, mit ein Formatstring mit den oben
+genannten Platzhaltern in einen mit Informationen befüllten String ausgegeben werden
+kann.
+
+```java
+public enum RwInfoDef {
+    .....
+
+    /**
+     * liefert den formatierten Informationsstring, die enthaltenen Platzhalter
+     * werden entsprechend ersetzt.
+     * 
+     * @param formatStr
+     *            der Formatstring
+     * @return der resultierende String
+     */
+    public static String format(final String formatStr) {
+        return VERSION.berechneString(formatStr);
+    }
+
+    .....
+}
+```
