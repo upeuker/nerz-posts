@@ -30,21 +30,21 @@ verfügbar.
 
 Die Beschreibungsdatei liegt üblicherweise in einem Unterverzeichnis "OSGI-INF" des Plugin-Projekts.
 
-![Projektstruktur mit Komponente]({{/assets/komponente_verzeichnis.png | absolute_url}}) 
+![Projektstruktur mit Komponente]({{ site.url }}/assets/komponente_verzeichnis.png) 
 
 Die Beschreibungsdatei kann händisch oder über den Assistenten der Eclipse IDE angelegt werden:
 
-![Kommando für den Assistent zum Anlegen einer Komponente](/assets/komponente_assistent.png) 
+![Kommando für den Assistent zum Anlegen einer Komponente]({{ site.url }}//assets/komponente_assistent.png) 
 
 Beispielhaft soll hier eine Komponente angelegt werden, die die Services "Rahmenwerk", "Berechtigungen" und "Einstellungen" des Rahmenwerks integriert.
 
 Auf der Startseite des Assistenten werden der Name der Definitionsdatei, ein eindeutiger Name für die Komponente und die implementierende Klasse angegeben.
 
-![Assistent: Komponente deifnieren](/assets/komponente_assi_1.png) 
+![Assistent: Komponente deifnieren]({{ site.url }}//assets/komponente_assi_1.png) 
 
 Nach Abschluss des Assistenten öffnet sich der Editor für die Komponentendatei.
 
-![Assistent: Komponente editieren](/assets/komponente_editor.png) 
+![Assistent: Komponente editieren]({{ site.url }}//assets/komponente_editor.png) 
 
 Auf Übersichtsseite können mindestens folgende Informationen bearbeitet werden:
 
@@ -54,7 +54,7 @@ Auf Übersichtsseite können mindestens folgende Informationen bearbeitet werden
 
 Auf der Seite "Services" werden die erwarteten und veröffentlichten Services definiert, im Beispiel für die drei oben genannten:
 
-![Assistent: Komponente - Services editieren](/assets/komponente_editor_services.png) 
+![Assistent: Komponente - Services editieren]({{ site.url }}//assets/komponente_editor_services.png) 
  
 Die dritte Seite zeigt die Quelle der Definitionsdatei, die wie folgt aussehen sollte:
 
