@@ -8,3 +8,5 @@ layout: home
 Nähere Informationen zu NERZ-Software finden sich unter  [http://nerz-ev.de](http://nerz-ev.de)
 
 
+Die Quellen sind zu finden unter [https://github.com/upeuker/nerz-posts](https://github.com/upeuker/nerz-posts)
+
