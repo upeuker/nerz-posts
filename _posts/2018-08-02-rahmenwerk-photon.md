@@ -16,10 +16,10 @@ Die aktuelle BETA-Version steht als Updateseite unter:
 
 Die jeweils aktuellen BETA-Pakete sind verfügbar für:
 
-- **Windows 64-Bit** [DOWNLOAD](https://http://www.bitctrl.de/projekte/rw3.3/products/de.bsvrz.buv.rw-win32.win32.x86_64.zip),
-- **Windows 32-Bit** [DOWNLOAD](https://http://www.bitctrl.de/projekte/rw3.3/products/de.bsvrz.buv.rw-win32.win32.x86.zip),
-- **Linux GTK** [DOWNLOAD](https://http://www.bitctrl.de/projekte/rw3.3/products/de.bsvrz.buv.rw-linux.gtk.x86_64.tar.gz) und
-- **Mac OS X** [DOWNLOAD](https://http://www.bitctrl.de/projekte/rw3.3/products/de.bsvrz.buv.rw-macosx.cocoa.x86_64.tar.gz)
+- **Windows 64-Bit** [DOWNLOAD](http://www.bitctrl.de/projekte/rw3.3/products/de.bsvrz.buv.rw-win32.win32.x86_64.zip),
+- **Windows 32-Bit** [DOWNLOAD](http://www.bitctrl.de/projekte/rw3.3/products/de.bsvrz.buv.rw-win32.win32.x86.zip),
+- **Linux GTK** [DOWNLOAD](http://www.bitctrl.de/projekte/rw3.3/products/de.bsvrz.buv.rw-linux.gtk.x86_64.tar.gz) und
+- **Mac OS X** [DOWNLOAD](http://www.bitctrl.de/projekte/rw3.3/products/de.bsvrz.buv.rw-macosx.cocoa.x86_64.tar.gz)
 
 Zum Erstellen der Software sind eine aktuelle Maven-Version und ein Git-Client erforderlich.
 
