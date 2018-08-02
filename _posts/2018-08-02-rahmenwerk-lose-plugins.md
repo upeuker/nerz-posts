@@ -1,43 +1,16 @@
 ---
 layout: post
-title:  "Rahmenwerk auf Eclipse-PHOTON-Basis"
+title:  "Bereitstellung der Los E - Plugins im NERZ-Repository"
 categories: rahmenwerk
 ---
 
-## Allgemeines
+## Publikation
 
-Das Rahmenwerk steht in der Developer-Version in einer neuen Version auf der Basis der Eclipse Version 4.8 (PHOTON) zur Verfügung.
+Die bisher zentral über eine Updateseite im Projekt "Los E" bereitgestellten
+Plugins für das Rahmenwerk 3 wurden im NERZ-Repository als einzelne Projekte
+angelegt.
 
-Die Quellen stehem im [NERZ-Repository](https://gitlab.nerz-ev.de/ERZ/RW_de.bsvrz.buv.rw) zur Verfügung.
-
-Die aktuelle BETA-Version steht als Updateseite unter:
-
-[http://www.bitctrl.de/projekte/rw3.3/updatesite/](http://www.bitctrl.de/projekte/rw3.3/updatesite/)
-
-Die jeweils aktuellen BETA-Pakete sind verfügbar für:
-
-- **Windows 64-Bit** [DOWNLOAD](http://www.bitctrl.de/projekte/rw3.3/products/de.bsvrz.buv.rw-win32.win32.x86_64.zip),
-- **Windows 32-Bit** [DOWNLOAD](http://www.bitctrl.de/projekte/rw3.3/products/de.bsvrz.buv.rw-win32.win32.x86.zip),
-- **Linux GTK** [DOWNLOAD](http://www.bitctrl.de/projekte/rw3.3/products/de.bsvrz.buv.rw-linux.gtk.x86_64.tar.gz) und
-- **Mac OS X** [DOWNLOAD](http://www.bitctrl.de/projekte/rw3.3/products/de.bsvrz.buv.rw-macosx.cocoa.x86_64.tar.gz)
-
-Zum Erstellen der Software sind eine aktuelle Maven-Version und ein Git-Client erforderlich.
-
-````
-git clone http://gitlab.nerz-ev.de/ERZ/RW_de.bsvrz.buv.rw.git
-cd RW_de.bsvrz.buv.rw
-mvn clean verify
-````
-
-Das erstellte Software-Paket findet sich im target-Verzeichnis des Unterprojekts de.bsvrz.buv.rw.tycho.product. 
-
-
-## Plugins
-
-Alle Standard-Plugins des Rahmenwerk 3 sind kompatibel mit dieser
-Rahmenwerk-Version.
-
-Insbesondere sind das die Plugins aus den NERZ-Projekten:
+Im Detail sind das:
 
 - [Anlagenstatus](https://gitlab.nerz-ev.de/ERZ/RW_de.bsvrz.buv.plugin.anlagenstatus)
 - [Archivverwaltung](https://gitlab.nerz-ev.de/ERZ/RW_de.bsvrz.buv.plugin.ars)
@@ -68,20 +41,38 @@ Insbesondere sind das die Plugins aus den NERZ-Projekten:
 - [Umfassende Datenanalyse](https://gitlab.nerz-ev.de/ERZ/RW_de.bsvrz.buv.plugin.uda)
 - [Verkehrsmeldungen-Detail](https://gitlab.nerz-ev.de/ERZ/RW_de.bsvrz.buv.plugin.verkehrsmeldung.detail)
 
-Der aktuelle Stand aus dem "develop"-Branch wird auf der Updateseite:
+Ein "Plugin-Projekt" setzt sich wie folgt zusammen:
+
+- ein oder mehrere Plugins, die die Funktionalität realisieren
+- ein oder mehrere Features, die die Plugins bereitstellen
+- eine Updatseite, über die die erzeugten Features und/oder Plugins zur
+  Installation zur Verfügung gestellt werden können.
+
+Die aus aktuellen "develop"-Branch erstellten Updateseiten der jeweiligen Projekte werden unter den im Projekt definierten URL http://bitctrl/projekte/rw_plugins/XXXX publiziert.
+
+Die einzelnen Updateseiten sollten verwendet werden, wenn Plugins entwickelt werden, die von einem der oben genannten Plugins anghängig sind.
+
+
+Aus den publizierten einzelnen Updateseiten wird die bisherige Gesamtupdateseite konstruiert:
 
 [http://www.bitctrl.de/projekte/lose_rw3.0/updatesite/](http://www.bitctrl.de/projekte/lose_rw3.0/updatesite/)
 
-bereitgestellt.
+Die Gesamt-Updateseite sollte in Produkten und/oder Installationen zur Installation und zum Update zum Einsatz kommen.
 
-## Java-Version
+## Plugin bauen
 
-Das Rahmenwerk ist Java-8-kompatibel, d.h. es wurden noch keine neueren Java-Mittel eingesetzt.
+Zum Erstellen eines Plugins sind eine aktuelle Maven-Version und ein Git-Client erforderlich.
 
-Das Rahmenwerk ist auch mit Java 9/10 ausführbar, dazu sollte in der Datei "rahmenwerk.ini" der VM-Parameter:
+Die Vorgehensweise ist im Folgenden beispielhaft am Plugin "Teilkonfigurations-Assistenten" dargestellt.
 
 ````
---add-modules=ALL-SYSTEM
+git clone http://gitlab.nerz-ev.de/ERZ/RW_de.bsvrz.buv.plugin.tka.git
+cd RW_de.bsvrz.buv.plugin.tka
+mvn clean verify
 ````
 
-ergänzt werden, da einige Plugins Pakete verwenden, die in neueren Java-Versionen als Modul explizit eingebunden werden müssen.
+Die erstellte Updateseite ist als ZIP-Archiv im "target"-Verzeichnis des Updatesite-Unterprojekts zu finden.
+
+## Ausblick
+
+Die Erstellung und Publikation der Updateseiten sollte zeitnah auf den NERZ ausgelagert werden.
