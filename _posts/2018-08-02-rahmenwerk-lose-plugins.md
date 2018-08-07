@@ -55,14 +55,21 @@ Ein "Plugin-Projekt" setzt sich wie folgt zusammen:
 
 Die aus aktuellen "develop"-Branch erstellten Updateseiten der jeweiligen Projekte werden unter den im Projekt definierten URL http://bitctrl/projekte/rw_plugins/XXXX publiziert.
 
-Die einzelnen Updateseiten sollten verwendet werden, wenn Plugins entwickelt werden, die von einem der oben genannten Plugins anghängig sind.
+**Zusätzlich erfolgt die Publikation beim NERZ unter der URL:
+https://nerz-ev.de/snapshots/buv_rwplugins/XXXX**.
 
+Die einzelnen Updateseiten sollten verwendet werden, wenn Plugins entwickelt 
+werden, die von einem der oben genannten Plugins abghängig sind. Es handelt sich stets um automatische Builds (BETA-Versionen).
+
+**Die offiziellen Versionen werden über: https://nerz-ev.de/releases/buv_rwplugins/XXXX bereitgestellt.**
 
 Aus den publizierten einzelnen Updateseiten wird die bisherige Gesamtupdateseite konstruiert:
 
 [http://www.bitctrl.de/projekte/lose_rw3.0/updatesite/](http://www.bitctrl.de/projekte/lose_rw3.0/updatesite/)
 
 Die Gesamt-Updateseite sollte in Produkten und/oder Installationen zur Installation und zum Update zum Einsatz kommen.
+
+**Zukünftig wird beim NERZ eine Gesamtupdateseite zusammengestellt, die Updateseiten der einzelnen Plugins zusammen mit der kernsoftware, den unterstützenden Dritt-Bibliotheken und dem Rahmenwerk bereitstellen und für die Installation in einem Projekt verwendet werden kann.**
 
 ## Plugin bauen
 
