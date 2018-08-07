@@ -10,6 +10,11 @@ Die bisher zentral über eine Updateseite im Projekt "Los E" bereitgestellten
 Plugins für das Rahmenwerk 3 wurden im NERZ-Repository als einzelne Projekte
 angelegt.
 
+Zum Bauen wird auf die Eclipse 4.6 (NEON) - Platform zurückgegriffen,
+um die Kompatibilität mit dem aktuellen Rahmenwerk 3 zu gewährleisten.
+
+Alle unten genannten Plugins wurden auch mit der neuen Eclipse-PHOTON-basierten Rahmenwerk geprüft und verwendet.
+
 Im Detail sind das:
 
 - [Anlagenstatus](https://gitlab.nerz-ev.de/ERZ/RW_de.bsvrz.buv.plugin.anlagenstatus)
