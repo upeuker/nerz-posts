@@ -9,7 +9,7 @@ Auf der NERZ-Seite gibt es jetzt die Möglichkeiten die Updateseiten für
 - die Kernsoftware, inklusive zusätzlicher Systemkomponenten:
   [https://gitlab.nerz-ev.de/ERZ/RW_de.bsvrz.updatesite](https://gitlab.nerz-ev.de/ERZ/RW_de.bsvrz.updatesite)
 - das Rahmenwerk [https://gitlab.nerz-ev.de/ERZ/RW_de.bsvrz.buv.rw](https://gitlab.nerz-ev.de/ERZ/RW_de.bsvrz.buv.rw) und
-- diverse [Plugin/Features]({% post_url 2018-08-02-rahmenwerk-lose-plugins %})
+- diverse [Plugin/Features]({{site.baseurl}}{% post_url 2018-08-02-rahmenwerk-lose-plugins %})
 
 abzurufen.
 
